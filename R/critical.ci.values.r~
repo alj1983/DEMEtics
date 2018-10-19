@@ -1,0 +1,9 @@
+critical.ci.values <- function(loci2){
+# Function used within the Bootstrapping.CI.r function, in order to calculate lower and upper confidence interval boundaries
+lower.difference <- abs(mean(as.numeric(as.vector(loci2[,1])),na.rm=TRUE)-quantile(as.numeric(as.vector(loci2[,1])),.025,na.rm=TRUE))
+upper.difference <- abs(mean(as.numeric(as.vector(loci2[,1])),na.rm=TRUE)-quantile(as.numeric(as.vector(loci2[,1])),.975,na.rm=TRUE))
+
+differences <- c(lower.difference,upper.difference)
+differences
+
+}

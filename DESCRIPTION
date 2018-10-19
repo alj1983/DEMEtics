@@ -1,0 +1,18 @@
+Package: DEMEtics
+Type: Package
+Title: Evaluating The Genetic Differentiation Between Populations Based on Gst and D Values
+Version: 0.8-8
+Date: 2018-02-03
+Author: Alexander Jueterbock, Philipp Kraemer, Gabriele Gerlach and Jana Deppermann
+Maintainer: Alexander Jueterbock <Alexander-Jueterbock@web.de>
+Depends: R (>= 2.8.0)
+Description: Allows to calculate the fixation index Gst
+  (Nei, 1973) and the differentiation index D (Jost, 2008) pairwise
+  between or averaged over several populations.  P-values, stating the
+  significance of differentiation, and 95 percent confidence intervals
+  can be estimated using bootstrap resamplings. In the case that more
+  than two populations are compared pairwise, the p-values are
+  adjusted by bonferroni correction and in several other ways due to
+  the multiple comparison from one data set.
+License: GPL (>= 2)
+RoxygenNote: 6.0.1
